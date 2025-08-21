@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Inscripcion</title>
+    <title>Sign in page</title>
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -12,30 +12,54 @@
 </head>
 
 <body>
-    <main>
-        <div class="description">
-            <h2>Sign In</h2>
-            <span>Welcome back</span>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo-container">
+                <img src="./assets/odin-lined.png" alt="Logo" height="150px">
+            </div>
+            <p class="credits">
+                Photo by <a href="https://unsplash.com/es/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/es" target="_blank">Unplash</a>
+            </p>
         </div>
-        <section class="form-section">
-            <form>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="name@example.com">
+        <div class="right-section">
+            <p>
+                "Your potential is waiting. This is the first step toward something great. Create your account and start building what you truly want to achieve."
+            </p>
+
+            <form action="post">
+
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="fistName" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" name="LastName" id="LastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone number</label>
+                        <input type="number" name="phoneNumber" id="phoneNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordRepeat">Confirm password</label>
+                        <input type="password" name="passwordRepeat" id="passwordRepeat" required>
+                    </div>
                 </div>
 
-                <div class="form-row">
-                    <label for="pwd">Password</label>
-                    <input type="password" name="password" id="pwd" placeholder="Your password">
-                </div>
-
-                <div class="form-row">
-                    <button type="submit">Login</button>
-                    <p>Don't have an account? <a href="">Sign up</a></p>
-                </div>
+                <button type="submit">Create Account</button>
+                <span>Already have an account? <a href="">Log in</a></span>
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 
 </html>
