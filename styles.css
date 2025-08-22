@@ -7,18 +7,21 @@
 .container {
     display: flex;
     height: 100vh;
-    font-family: "Verdana", sans-serif;
+    font-family: 'Verdana' ;
+    color: #222;
 }
 
 .left-section {
     flex: 1;
     background: url(./assets/image-cover.avif) center / cover no-repeat;
     display: flex;
+    min-width: 50%;
     flex-direction: column;
+    height: 100%;
 }
 
 .logo-container {
-    margin-top: 150px;
+    margin-top: 200px;
     background-color: #00000065;
     text-align: center;
     padding: 20px;
@@ -37,4 +40,112 @@
 
 .right-section {
     flex: 1;
+    background-color: #eee;
+    height: 100%;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 170px 50px 0;
+}
+
+form {
+    margin-top: 140px;
+}
+
+.form-container {
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #272727;
+}
+
+.form-row + .form-row {
+    /* border: solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-group label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #272727;
+}
+
+.form-group input {
+    width: 250px;
+    margin-top: 4px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.051);
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    border: 2px solid #596D48;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ee453f;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 50px;
+}
+
+button {
+    width: 250px;
+    background-color: #596D48;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b4830;
+}
+
+.button-container span {
+    margin-top: 30px;
+}
+
+.button-container a {
+    color: #596D48;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button-container a:hover {
+    color:#3b4830;
 }

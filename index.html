@@ -15,51 +15,63 @@
     <div class="container">
         <div class="left-section">
             <div class="logo-container">
-                <img src="./assets/odin-lined.png" alt="Logo" height="150px">
+                <img src="./assets/odin-lined.png" alt="Logo" height="100px">
             </div>
             <p class="credits">
                 Photo by <a href="https://unsplash.com/es/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/es" target="_blank">Unplash</a>
             </p>
         </div>
         <div class="right-section">
-            <p>
+            <p class="description">
                 "Your potential is waiting. This is the first step toward something great. Create your account and start building what you truly want to achieve."
             </p>
-
-            <form action="post">
+            <!-- FORMULARIO -->
+            <form action="post" id="form">
 
                 <div class="form-container">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="fistName" id="firstName" required>
+
+                    <div class="form-row">
+                        <p class="form-header">Sign Up</p>
                     </div>
-                    <div class="form-group">
-                        <label for="LastName">Last Name</label>
-                        <input type="text" name="LastName" id="LastName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phoneNumber">Phone number</label>
-                        <input type="number" name="phoneNumber" id="phoneNumber" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="passwordRepeat">Confirm password</label>
-                        <input type="password" name="passwordRepeat" id="passwordRepeat" required>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input placeholder="Sebastian" type="text" name="fistName" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="LastName">Last Name</label>
+                            <input placeholder="Durand Flores" type="text" name="LastName" id="LastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input placeholder="sebastian@durandflores" type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone number</label>
+                            <input placeholder="9999999" type="number" name="phoneNumber" id="phoneNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input placeholder="Your password" type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Confirm password</label>
+                            <input placeholder="Repeat password" type="password" name="passwordRepeat" id="passwordRepeat" required>
+                        </div>
                     </div>
                 </div>
 
-                <button type="submit">Create Account</button>
-                <span>Already have an account? <a href="">Log in</a></span>
+                <div class="button-container">
+                    <button type="submit">Create Account</button>
+                    <span>Already have an account? <a>Log in</a></span>
+                </div>
+                
             </form>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
